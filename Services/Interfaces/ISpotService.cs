@@ -3,6 +3,7 @@
     public interface ISpotService
     {
         int GetReservedSpotCount();
-        int GetRegularSpotCount(int totalSpots, int reservedSpots);
+        int GetRegularSpotCount();
+        int GetTotalSpotCount();
     }
 }
