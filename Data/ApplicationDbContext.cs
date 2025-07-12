@@ -14,5 +14,6 @@ public class ApplicationDbContext : IdentityDbContext
     public DbSet<ParkingSpot> ParkingSpots { get; set; }
     public DbSet<PricingPlan> PricingPlans { get; set; }
     public DbSet<Subscriber> Subscribers { get; set; }
+    public DbSet<Subscription> Subscriptions { get; set; }
 
 }
