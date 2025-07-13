@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-ParkingSlot-335c5e67-2fe3-48c1-bf71-bb786308acc8</UserSecretsId>
+    <UserSecretsId>aspnet-ParkingLotManagement-335c5e67-2fe3-48c1-bf71-bb786308acc8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

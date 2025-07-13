@@ -1,6 +1,6 @@
 ﻿using ParkingLotManagement.Models;
 using ParkingLotManagement.Services.Interfaces;
-using ParkingSlot.Data;
+using ParkingLotManagement.Data;
 
 namespace ParkingLotManagement.Services
 {

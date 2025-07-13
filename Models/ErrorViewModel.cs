@@ -1,4 +1,4 @@
-namespace ParkingSlot.Models
+namespace ParkingLotManagement.Models
 {
     public class ErrorViewModel
     {

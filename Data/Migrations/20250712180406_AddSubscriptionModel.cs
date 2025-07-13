@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ParkingSlot.Data.Migrations
+namespace ParkingLotManagement.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddSubscriptionModel : Migration

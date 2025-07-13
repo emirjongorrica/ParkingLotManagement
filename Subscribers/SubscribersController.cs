@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ParkingLotManagement.Models;
 using AutoMapper;
-using ParkingSlot.Data;
+using ParkingLotManagement.Data;
 
 namespace ParkingLotManagement.Subscribers
 {
