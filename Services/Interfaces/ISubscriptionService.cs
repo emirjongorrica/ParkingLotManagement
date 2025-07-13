@@ -1,11 +1,10 @@
 ﻿using ParkingLotManagement.Models;
 
-namespace ParkingLotManagement.Services.Interfaces
+namespace ParkingLotManagement.Services.Interfaces;
+
+public interface ISubscriptionService
 {
-    public interface ISubscriptionService
-    {
-        decimal CalculateSubscriptionPrice(int totalDays, decimal weekdayRate, decimal discount);
-        bool HasActiveSubscription(int subscriberId);
-        bool IsSubscriptionCodeUnique(string code);
-    }
+    decimal CalculateSubscriptionPrice(int totalDays, decimal weekdayRate, decimal discount);
+    bool HasActiveSubscription(int subscriberId);
+    bool IsSubscriptionCodeUnique(string code);
 }
