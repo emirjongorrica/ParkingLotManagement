@@ -32,7 +32,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7083/api/Subscribers",
+					"raw": "https://localhost:7083/api/Subscribers/1",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -40,14 +40,8 @@
 					"port": "7083",
 					"path": [
 						"api",
-						"Subscribers"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "1",
-							"disabled": true
-						}
+						"Subscribers",
+						"1"
 					]
 				}
 			},
@@ -88,7 +82,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "https://localhost:7083/api/Subscribers?id=1",
+					"raw": "https://localhost:7083/api/Subscribers/2",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -96,13 +90,8 @@
 					"port": "7083",
 					"path": [
 						"api",
-						"Subscribers"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "1"
-						}
+						"Subscribers",
+						"2"
 					]
 				}
 			},

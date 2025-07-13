@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ParkingLotManagement.Models;
 
-namespace ParkingSlot.Data;
+namespace ParkingLotManagement.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {

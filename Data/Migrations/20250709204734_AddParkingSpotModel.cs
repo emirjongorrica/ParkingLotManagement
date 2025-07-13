@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ParkingSlot.Data.Migrations
+namespace ParkingLotManagement.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AddParkingSpotModel : Migration

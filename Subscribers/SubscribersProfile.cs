@@ -1,13 +1,12 @@
 ﻿using AutoMapper;
 using ParkingLotManagement.Models;
 
-namespace ParkingLotManagement.Subscribers
+namespace ParkingLotManagement.Subscribers;
+
+public class SubscribersProfile : Profile
 {
-    public class SubscribersProfile : Profile
+    public SubscribersProfile()
     {
-        public SubscribersProfile()
-        {
-            CreateMap<Subscriber, SubscribersWebDto>().ReverseMap();
-        }
+        CreateMap<Subscriber, SubscribersWebDto>().ReverseMap();
     }
 }

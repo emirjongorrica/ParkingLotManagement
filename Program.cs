@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ParkingLotManagement.Services.Interfaces;
 using ParkingLotManagement.Services;
-using ParkingSlot.Data;
+using ParkingLotManagement.Data;
 using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);

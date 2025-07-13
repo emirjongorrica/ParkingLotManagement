@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ParkingSlot.Data;
+using ParkingLotManagement.Data;
 
 #nullable disable
 
-namespace ParkingSlot.Data.Migrations
+namespace ParkingLotManagement.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20250712210123_AddLogModel")]

@@ -1,9 +1,8 @@
 ﻿using ParkingLotManagement.Models;
 
-namespace ParkingLotManagement.Services.Interfaces
+namespace ParkingLotManagement.Services.Interfaces;
+
+public interface ILogService
 {
-    public interface ILogService
-    {
-        Log CreateLog(Log log);
-    }
+    Log CreateLog(Log log);
 }

@@ -1,10 +1,8 @@
-﻿using System;
-using ParkingLotManagement.Models;
+﻿using ParkingLotManagement.Models;
 
-namespace ParkingLotManagement.Services.Interfaces
+namespace ParkingLotManagement.Services.Interfaces;
+
+public interface IPricingService
 {
-    public interface IPricingService
-    {
-        decimal CalculatePrice(DateTime checkIn, DateTime checkOut, PricingPlan plan);
-    }
+    decimal CalculatePrice(DateTime checkIn, DateTime checkOut, PricingPlan plan);
 }
