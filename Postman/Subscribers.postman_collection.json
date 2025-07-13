@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "14a25522-fe2e-42d6-a508-651b82d80bd7",
+		"name": "Subscribers",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44637668"
+	},
+	"item": [
+		{
+			"name": "Subscribers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7083/api/Subscribers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Subscribers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscriber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7083/api/Subscribers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Subscribers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscriber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Emirjon\",\r\n  \"lastName\": \"Gorrica\",\r\n  \"idCardNumber\": \"ABC12345\",\r\n  \"email\": \"emirjon@example.com\",\r\n  \"phoneNumber\": \"1234567890\",\r\n  \"birthday\": \"2000-01-01\",\r\n  \"plateNumber\": \"AA123BB\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7083/api/Subscribers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Subscribers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subscriber",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7083/api/Subscribers?id=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Subscribers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
