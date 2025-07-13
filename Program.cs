@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ParkingLotManagement.Services.Interfaces;
 using ParkingLotManagement.Services;
 using ParkingSlot.Data;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,8 @@ builder.Services.AddScoped<IPricingService, PricingService>();
 builder.Services.AddScoped<ISubscriptionService, SubscriptionService>();
 builder.Services.AddScoped<ISpotService, SpotService>();
 builder.Services.AddScoped<ILogService, LogService>();
+
+builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
