@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ParkingSlot.Models;
+using ParkingLotManagement.Models;
 using System.Diagnostics;
 
-namespace ParkingSlot.Controllers
+namespace ParkingLotManagement.Controllers
 {
     public class HomeController : Controller
     {
