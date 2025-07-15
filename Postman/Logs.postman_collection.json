@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "11c56646-4200-439d-8a30-9d1909044bf7",
+		"name": "Logs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44637668"
+	},
+	"item": [
+		{
+			"name": "Logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7083/api/Logs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Logs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7083/api/Logs/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Logs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logs by Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7083/api/Logs/date/2025-07-15",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Logs",
+						"date",
+						"2025-07-15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log (Without Subscription)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"LOG2025-001\",\r\n  \"subscriptionId\": null,\r\n  \"checkInTime\": \"2025-07-15T08:00:00\",\r\n  \"checkOutTime\": \"2025-07-15T11:30:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7083/api/Logs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Logs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log (With Subscription - Free)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"code\": \"LOG2025-002\",\r\n  \"subscriptionId\": 1,\r\n  \"checkInTime\": \"2025-07-15T09:00:00\",\r\n  \"checkOutTime\": \"2025-07-15T12:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7083/api/Logs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7083",
+					"path": [
+						"api",
+						"Logs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
