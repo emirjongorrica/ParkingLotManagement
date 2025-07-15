@@ -30,16 +30,6 @@ public class LogsController : ControllerBase
         return Ok(_mapper.Map<List<LogsWebDto>>(logs));
     }
 
-    [HttpGet("date/{date}")]
-    public async Task<ActionResult<IEnumerable<LogsWebDto>>> GetLogsByDate(DateTime date)
-    {
-        var logs = await _context.Logs
-            .Where(l => l.CheckInTime.Date == date.Date)
-            .ToListAsync();
-
-        return Ok(_mapper.Map<List<LogsWebDto>>(logs));
-    }
-
     [HttpGet("{id}")]
     public async Task<ActionResult<LogsWebDto>> GetLog(int id)
     {
@@ -48,6 +38,16 @@ public class LogsController : ControllerBase
             return NotFound();
 
         return _mapper.Map<LogsWebDto>(log);
+    }
+
+    [HttpGet("date/{date}")]
+    public async Task<ActionResult<IEnumerable<LogsWebDto>>> GetLogsByDate(DateTime date)
+    {
+        var logs = await _context.Logs
+            .Where(l => l.CheckInTime.Date == date.Date)
+            .ToListAsync();
+
+        return Ok(_mapper.Map<List<LogsWebDto>>(logs));
     }
 
     [HttpPost]
